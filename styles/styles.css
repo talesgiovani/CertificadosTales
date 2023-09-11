@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Lumanosimo&family=Rubik:wght@300;600&display=swap');
+
+:root {
+    --cor-primaria: #0C356A;
+    --cor-secundaria: #40F8FF;
+    --cor-terciaria: #279EFF;
+    --cor-hover: #AAD9FF;
+    --cor-fonte: white;
+
+    --fonte-primaria: 'Lumanosimo', 'cursive';
+    --fonte-secundaria: 'Rubik', sans-serif;
+}
+
+* { /* select all elements */ 
+    margin: 0; padding: 0; /*resetar o espaçamento padrão aplicado pelo CSS*/ 
+}
+
+body {
+    /* height: 100vh; 100% da viewport ("parte visível da tela") */
+    box-sizing: border-box; /*controlar para que o elemento filho não ultrapasse o elemento pai*/
+    color:var(--cor-fonte); /*cor do texto*/
+    background-color: var(--cor-primaria);
+}
+
+.cabecalho {
+    background-color: var(--cor-secundaria);
+    padding: 1% 0% 1% 7.5%; /* padding values : top, right, bottom, left*/
+    color: var(--cor-primaria);
+}
+
+.cabecalho__menu {
+    display: flex;
+    gap: 5%;
+}
+
+.cabecalho__menu__link {
+    font-family: var(--fonte-secundaria);
+    font-size: 1.5rem;
+    font-weight: 300;
+    text-decoration: none;
+}
+
+.cabecalho__menu__link:hover {
+    font-weight: 600;
+}
+
+.presentation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8% 13%; /* vertical, horizontal */
+}
+
+.presentation__content {
+    max-width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.presentation__content__title {
+    font-size: 2.25rem; /* conversão aproximada => 16px = 1 rem */
+    font-family: var(--fonte-primaria);
+}
+
+.titulo-destaque { /* to select a class we use a period (.) before the name of the class*/
+    color: var(--cor-secundaria);
+
+}
+
+.presentation__content__text {
+    font-size: 1.5rem;
+    font-family: var(--fonte-secundaria);
+}
+
+.presentation__content__links {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+}
+
+.presentation__content__links__subtitle {
+    font-family: var(--fonte-primaria);
+    font-size: 1.25rem;
+}
+
+.presentation__content__links__style {
+    /* background-color: #00ffa3; |  'CTRL + K + C = comentário' */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    font-size: 1.75rem;
+    border: 2px solid var(--cor-secundaria); /* thickness | dotted / solid / double ... | color */
+    border-radius: 8px;
+    width: 50%;
+    text-align: center;
+    padding: 21.5px 0; /* vertical, horizontal */
+    text-decoration: none;
+    color: var(--cor-fonte);
+    font-family: var(--fonte-secundaria);
+    font-weight: 600;
+}
+
+.presentation__content__links__style:hover {
+    background-color: var(--cor-hover);
+    padding: 4%;
+}
+
+.profile_picture {
+    width: 40%;
+    border-radius: 30px;
+}
+
+.rodape {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center; /* align vertically */
+    padding: 12px;
+    background-color: var(--cor-terciaria);
+    font-family: var(--fonte-secundaria);
+    font-weight: 300;
+}
+
+.certificates__list a {
+    color: var(--cor-fonte);
+    text-decoration: none;
+    
+}
+
+.certificates__list h2 {
+    color: var(--cor-secundaria);
+    font-family: var(--fonte-primaria);
+    margin: 15px;
+}
+
+.certificates__list {
+    font-size: 1.5rem;
+    font-family: var(--fonte-secundaria);
+}
+
+.certificates__list li {
+    margin-bottom: 10px;
+}
+
+.link__hover a:hover {
+    color: var(--cor-terciaria);
+    margin: 15px;
+}
+
+#me__color {
+    align-self: flex-start;
+}
+
+
