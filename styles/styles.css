@@ -181,7 +181,8 @@ body {
     }
 
     .presentation__content__links__style{
-        width: 95%;
+        width: 90%;
+        font-size: 1.25rem;
     }
 
     .cabecalho__menu__link{
@@ -189,6 +190,6 @@ body {
     }
 
     .presentation__content__title {
-        font-size: 2rem;
+        font-size: 1.75rem;
     }
 }
