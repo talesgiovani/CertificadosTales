@@ -192,4 +192,9 @@ body {
     .presentation__content__title {
         font-size: 1.75rem;
     }
+
+    .certificates__list {
+        margin: 4%;
+        font-size: 0.75rem;
+    }
 }
