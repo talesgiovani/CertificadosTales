@@ -156,6 +156,16 @@ body {
 }
 
 @media (max-width: 1200px) {
+    
+    .cabecalho {
+        padding: 3%;
+    }
+
+    .cabecalho__menu {
+        justify-content: center;
+        gap: 5%;
+    }
+
     .presentation {
         flex-direction: column-reverse;
     }
