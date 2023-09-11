@@ -49,6 +49,7 @@ body {
     align-items: center;
     justify-content: space-between;
     padding: 8% 13%; /* vertical, horizontal */
+    gap: 82px;
 }
 
 .presentation__content {
@@ -154,4 +155,8 @@ body {
     align-self: flex-start;
 }
 
-
+@media (max-width: 1200px) {
+    .presentation {
+        flex-direction: column-reverse;
+    }
+}
